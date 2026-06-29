@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Test</title>
+</head>
+<body>
+
+    <h2>JavaScript Test</h2>
+    <button onclick="showTime()">Click here...</button>
+
+    <p id="timeDisplay"></p>
+
+    <script>
+        function showTime() {
+            var now = new Date();
+            var timeString = now.toLocaleTimeString();
+            document.getElementById("timeDisplay").textContent = 'JavaScript is working. The current time is: ' + timeString;
+        }
+    </script>
+
+</body>
+</html>
